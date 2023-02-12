@@ -23,8 +23,8 @@ const webcamError = (error) => {
 
 const webcamScan = (result) => {
   if(result){
-    const changedResult = result.split('//')[1];
-    navigate('/details',{state:{id:changedResult,type}});
+    // const changedResult = result.split('//')[1];
+    navigate('/details',{state:{id:result,type}});
   }
 }
 

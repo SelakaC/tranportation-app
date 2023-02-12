@@ -55,7 +55,7 @@ const Details = () => {
       <Container>
       <div style={{textAlign:'start'}} className='mt-5'>
       <p>Type - <b>{detail.type_of_Mineral}</b></p>
-      <p>Vehicle Owner Name - <b>{ownerName}</b></p>
+      <p>Vehicle Owner Name - <b>{ownerName || 'Not Found'}</b></p>
       <p>Vehicle Number Plate ID - <b>{detail.vehicle_No}</b></p>
       <p>Qunatity - <b>{detail.quantity_cubes}</b></p>
       <p>Reason - <b>{detail.reason}</b></p>
